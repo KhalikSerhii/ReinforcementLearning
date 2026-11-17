@@ -6,18 +6,6 @@ import time
 from mountain_car_mdp import build_P, discretize, N_POS, N_VEL, N_ACTIONS
 
 
-def show_random_agent(env):
-    state, _ = env.reset()
-
-    for t in range(200):
-        state, reward, terminated, truncated, _ = env.step(np.random.randint(0, N_ACTIONS))
-        env.render()
-        if terminated or truncated:
-            break
-        time.sleep(0.02)
-
-    env.close()
-
 
 def compute_value_function(policy, P, value_table=None, num_iterations=3000, threshold=1e-6, gamma=0.99):
     n_states = len(P)

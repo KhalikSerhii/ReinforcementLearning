@@ -13,3 +13,10 @@
 |------|
 | `monte_carlo.py`
 | `monte_carlo_improved.py`
+
+# Лабораторна робота 2: Car Racing (DQN)
+
+| Файли |
+|------|
+| `dqn_car_racing.py`
+| `dqn_car_racing.ipynb`
